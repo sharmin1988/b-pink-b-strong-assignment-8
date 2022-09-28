@@ -6,13 +6,18 @@ import OtherInfo from './components/OtherInfo/OtherInfo';
 function App() {
 
   const [activities, setActivities] = useState([])
+  const [exerciseDetails, setExerciseDetails] = useState([])
 
   useEffect(() => {
     fetch('data.json')
-    .then(res => res.json())
-    .then(data => setActivities(data))
+      .then(res => res.json())
+      .then(data => setActivities(data))
   }, [])
 
+  const handelAddToList = (selectedActivity) => {
+    const newExerciseDetails = [...exerciseDetails,selectedActivity]
+    setExerciseDetails(newExerciseDetails)
+  }
 
   return (
     <div className='homepage'>
@@ -21,17 +26,18 @@ function App() {
         <h1>Be-<span className='pink'>piNk</span>  b-STRONG</h1>
         <h3>Select today’s exercise</h3>
         <div className="activity-container">
-        {
-          activities.map(activity => <Activity
-             key = {activity.id} 
-             activities = {activity}
-             ></Activity>)
-        }
+          {
+            activities.map(activity => <Activity
+              key={activity.id}
+              activity={activity}
+              handelAddToList={handelAddToList}
+            ></Activity>)
+          }
         </div>
       </div>
-      
+
       <div className="other-info-container">
-        <OtherInfo></OtherInfo>
+        <OtherInfo exerciseDetails = {exerciseDetails}></OtherInfo>
       </div>
     </div>
   );

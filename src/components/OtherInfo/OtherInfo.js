@@ -2,12 +2,20 @@ import React from 'react';
 import pic from '../../image/Person_Image-removebg-preview.png'
 import './OtherInfo.css'
 
-const OtherInfo = () => {
+const OtherInfo = ({exerciseDetails}) => {
+    
+    let totalTime = 0;
+    for(const activity of exerciseDetails){
+        totalTime = totalTime + activity.time
+    }
+    
     return (
         <div className='person-container'>
             <div className='person'>
                 <img src={pic} alt="" />
-                <h4>Name: Rasna Sharmin</h4>
+                <h3>Rasna Sharmin
+                    <br /> <small>Sydney, Australia</small>
+                </h3>
             </div>
             <div className='person-info'>
                 <h5>Height <br />5.7</h5>
@@ -26,8 +34,12 @@ const OtherInfo = () => {
             <div className='exercise-container'>
                 <h2>Exercise Details</h2>
                 <div className="exercise">
-                    <h4>Exercise time: {} <small>min</small></h4>
-                    <h4>Break time: {} <small>min</small></h4>
+                    <h4>Exercise time:</h4>
+                    <p> {totalTime} <small>min</small></p>
+                </div>
+                <div className="exercise">
+                    <h4>Break time:</h4>
+                    <p> {} <small>min</small></p>
                 </div>
             </div>
             <button className='btn-completed'>Activity Completed</button>
