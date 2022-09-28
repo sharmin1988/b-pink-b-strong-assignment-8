@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import Activity from './Activity/Activity';
+import Activity from './components/Activity/Activity';
 import './App.css';
+import OtherInfo from './components/OtherInfo/OtherInfo';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className='homepage'>
+
       <div className="activities-container">
         <h1>Be-<span className='pink'>piNk</span>  b-STRONG</h1>
         <h3>Select today’s exercise</h3>
@@ -26,10 +28,10 @@ function App() {
              ></Activity>)
         }
         </div>
-
       </div>
-      <div className="person-info-and-calculation-container">
-        <h3>personal</h3>
+      
+      <div className="other-info-container">
+        <OtherInfo></OtherInfo>
       </div>
     </div>
   );

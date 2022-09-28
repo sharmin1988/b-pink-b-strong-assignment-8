@@ -1,0 +1,23 @@
+.person-container{
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}.person img{
+width: 10%;
+border-radius: 50px ;
+margin-right: 10px;
+}
+.person-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: azure;
+    margin-top: 20px;
+    border-radius: 10px;
+}
