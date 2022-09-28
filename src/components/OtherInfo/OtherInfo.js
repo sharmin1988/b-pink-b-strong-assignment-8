@@ -14,6 +14,23 @@ const OtherInfo = () => {
                 <h5>Weight <br />57 kg</h5>
                 <h5>25 years <br />Age</h5>
             </div>
+            <div className="break-container">
+                <h3>Add A Break</h3>
+                <div className="break-time">
+                    <h5>2min</h5>
+                    <h5>4min</h5>
+                    <h5>5min</h5>
+                    <h5>10min</h5>
+                </div>
+            </div>
+            <div className='exercise-container'>
+                <h2>Exercise Details</h2>
+                <div className="exercise">
+                    <h4>Exercise time: {} <small>min</small></h4>
+                    <h4>Break time: {} <small>min</small></h4>
+                </div>
+            </div>
+            <button className='btn-completed'>Activity Completed</button>
         </div>
     );
 };
