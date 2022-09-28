@@ -15,15 +15,18 @@ function App() {
 
   return (
     <div className='homepage'>
-      <div className="activity-container">
-        <h2>Be-<span className='pink'>piNk</span>-B-STRONG {activities.length}</h2>
+      <div className="activities-container">
+        <h1>Be-<span className='pink'>piNk</span>  b-STRONG</h1>
+        <h3>Select today’s exercise</h3>
+        <div className="activity-container">
         {
           activities.map(activity => <Activity
              key = {activity.id} 
              activities = {activity}
              ></Activity>)
         }
-          
+        </div>
+
       </div>
       <div className="person-info-and-calculation-container">
         <h3>personal</h3>

@@ -1,11 +1,24 @@
-.homepage{
+.homepage {
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin: 20px;
 }
 
-.person-info-and-calculation-container{
-  background-color: lightcoral;
+.activities-container {
+  padding: 50px;
 }
 
+.activity-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 
+}
+
+.pink {
+  color: magenta;
+}
+
+.person-info-and-calculation-container {
+  background-color: lightcoral;
+}
