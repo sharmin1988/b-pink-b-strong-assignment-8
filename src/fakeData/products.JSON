@@ -1,0 +1,69 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "category": "exercise",
+    "name": "Warm-UP",
+    "time": 15,
+    "ratings": 4,
+    "ratingsCount": 3725,
+    "img": "https://img.freepik.com/free-photo/sports-girl-black-top-training-autumn-park_1157-28605.jpg?w=900&t=st=1664377364~exp=1664377964~hmac=c42923b7576a41e9c966ec506d373847665279a2f2462823b971f1b31eb8aa43",
+    "shipping": 1,
+    "quantity": 0
+  },
+  {
+    "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+    "category": "yoga",
+    "name": "YoGa",
+    "time": 30,
+    "ratings": 5,
+    "ratingsCount": 4355,
+    "img": "https://img.freepik.com/free-photo/woman-lotus-pose-park_1098-1392.jpg?w=900&t=st=1664376836~exp=1664377436~hmac=9ae1e8bf9a2182085b23961ca2e289647a0818cfa272df7e2d49b55c23249742",
+    "shipping": 14,
+    "quantity": 0
+  },
+  {
+    "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+    "category": "cardiac exercise",
+    "name": "Skipping",
+    "time": 15,
+    "ratings": 4,
+    "ratingsCount": 3972,
+    "img": "https://img.freepik.com/free-photo/woman-jumping-rope-bali_72229-1566.jpg?w=900&t=st=1664377183~exp=1664377783~hmac=5f19ae6af9f10ac572ab58e736eeceba37459aaf30208f51b37fd360cc16e662",
+    "shipping": 1,
+    "quantity": 0
+  },
+  {
+    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+    "category": "run",
+    "name": "Running",
+    "time": 20,
+    "ratings": 5,
+    "ratingsCount": 1764,
+    "img": "https://img.freepik.com/free-photo/young-beautiful-sportive-girl-preparing-run-seaside_176420-6383.jpg?w=900&t=st=1664377038~exp=1664377638~hmac=c289286a55c568175120d3f2e6ce722711fddc1194fe43f1b9a793cfbd1407dd",
+    "shipping": 32,
+    "quantity": 0
+  },
+  {
+    "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+    "category": "power-up",
+    "name": "Weight-lifting",
+    "stock": 10,
+    "ratings": 4,
+    "ratingsCount": 799,
+    "img": "https://img.freepik.com/premium-photo/woman-fitness-motivation-barbell-workout-wellness-gym-sports-training-exercising-healthy-muscle-growth-weightlifting-bodybuilder-personal-trainer-people-coach-exercise-room_590464-82434.jpg?w=900",
+    "shipping": 49,
+    "quantity": 0
+  },
+  {
+    "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+    "category": "power-up",
+    "name": "Crunches",
+    "stock": 5,
+    "ratings": 3,
+    "ratingsCount": 4372,
+    "img": "https://img.freepik.com/free-photo/fitness-woman-with-slim-body-doing-abdominal-crunches-exercise-mat-home-active-woman-exercising-with-hiit-workout_662251-1328.jpg?w=900&t=st=1664377959~exp=1664378559~hmac=d241ec6f6c938ebdf1204bdc217951ee372bfc91ba7dd4ddaa3c99d4d1146985",
+    "shipping": 19,
+    "quantity": 0
+  }
+  
+]
