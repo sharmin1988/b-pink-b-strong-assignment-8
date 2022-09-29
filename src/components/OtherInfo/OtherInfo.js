@@ -3,6 +3,7 @@ import BreakTime from '../BreakTime/BreakTime';
 import Person from '../Person/Person';
 import { addToDb } from '../Utilities/fakeDb';
 import './OtherInfo.css'
+import { ToastContainer, toast } from 'react-toastify';
 
 const OtherInfo = ({ exerciseDetails }) => {
     const [brTime, setBrTime] = useState(0)
@@ -25,6 +26,11 @@ const OtherInfo = ({ exerciseDetails }) => {
         }
     }, [])
 
+    // toast fire up
+    const handelButton = () => {
+        toast("Congratulation!!! Your daily activities is complete!!")
+    }
+    
     return (
         <div className='otherInfo-container'>
             <Person></Person>
@@ -45,7 +51,8 @@ const OtherInfo = ({ exerciseDetails }) => {
                     <p>{brTime} <small>min</small></p>
                 </div>
             </div>
-            <button className='btn-completed'>Activity Completed</button>
+            <button onClick={handelButton} className='btn-completed'>Activity Completed</button>
+            <ToastContainer />
         </div>
     );
 };

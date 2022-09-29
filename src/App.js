@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Activity from './components/Activity/Activity';
 import './App.css';
 import OtherInfo from './components/OtherInfo/OtherInfo';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
