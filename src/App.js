@@ -54,7 +54,13 @@ function App() {
             2 .The props are Immutable (cannot be modified)
             The state is Mutable ( can be modified), this.setState property is used to update/modified the state values in the component.</p>
         </div>
-        
+        <div className="blog">
+          <h2>Except data load how we can use useEffect?</h2>
+          <p>The useEffect Hook eliminates the side-effects of using class-based components. For example, tasks like updating the DOM, fetching data from API end-points, setting up subscriptions or timers, etc can be lead to unwarranted side-effects.
+            <br /> useEffect is a function that gets executed for 3 different React component lifecycles.
+            Those lifecycles are componentDidMount, componentDidUpdate, and componentWillUnmount lifecycles.
+          </p>
+        </div>
       </div>
     </div>
   );
