@@ -1,45 +1,44 @@
-import React from 'react';
-import pic from '../../image/Person_Image-removebg-preview.png'
+import React, { useState } from 'react';
+import BreakTime from '../BreakTime/BreakTime';
+import Person from '../Person/Person';
 import './OtherInfo.css'
 
-const OtherInfo = ({exerciseDetails}) => {
-    
+const OtherInfo = ({ exerciseDetails }) => {
+    const [brTime, setBrTime] = useState([])
+
     let totalTime = 0;
-    for(const activity of exerciseDetails){
+    for (const activity of exerciseDetails) {
         totalTime = totalTime + activity.time
     }
-    
+
+    const handelBreak = (event) => {
+        console.log(event)
+
+        setBrTime([...brTime, event])
+    }
+    let breakTotal = 0;
+    for (const breakTime of brTime){
+        breakTotal = breakTotal + breakTime;
+    }
+
     return (
-        <div className='person-container'>
-            <div className='person'>
-                <img src={pic} alt="" />
-                <h3>Rasna Sharmin
-                    <br /> <small>Sydney, Australia</small>
-                </h3>
-            </div>
-            <div className='person-info'>
-                <h5>Height <br />5.7</h5>
-                <h5>Weight <br />57 kg</h5>
-                <h5>25 years <br />Age</h5>
-            </div>
-            <div className="break-container">
-                <h3>Add A Break</h3>
-                <div className="break-time">
-                    <h5>2min</h5>
-                    <h5>4min</h5>
-                    <h5>5min</h5>
-                    <h5>10min</h5>
-                </div>
-            </div>
+        <div className='otherInfo-container'>
+            <Person></Person>
+            <BreakTime handelBreak={handelBreak}></BreakTime>
             <div className='exercise-container'>
+                
                 <h2>Exercise Details</h2>
+
+                {/* total time  */}
                 <div className="exercise">
                     <h4>Exercise time:</h4>
-                    <p> {totalTime} <small>min</small></p>
+                    <p>{totalTime} <small>min</small></p>
                 </div>
+
+                {/* total Break time */}
                 <div className="exercise">
                     <h4>Break time:</h4>
-                    <p> {} <small>min</small></p>
+                    <p>{breakTotal} <small>min</small></p>
                 </div>
             </div>
             <button className='btn-completed'>Activity Completed</button>

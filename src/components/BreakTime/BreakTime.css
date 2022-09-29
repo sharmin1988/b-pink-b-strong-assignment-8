@@ -1,0 +1,19 @@
+.break-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: azure;
+    border-radius: 10px;
+}
+.break-time h5{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: lightblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; 
+}
+.break-time h5:hover{
+    background-color: bisque;
+}

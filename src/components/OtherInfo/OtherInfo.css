@@ -1,52 +1,9 @@
-.person-container{
+.otherInfo-container{
     position: sticky;
     top: 0;
     padding: 0px 20px;
 }
-.person{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}.person img{
-    background: lightblue;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-margin-right: 10px;
-}
-.person small{
-    font-weight: 400;
-}
-.person-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: azure;
-    margin-top: 20px;
-    border-radius: 10px;
-}
 
-/* break-container styles */
-.break-time{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: azure;
-    border-radius: 10px;
-}
-.break-time h5{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background: lightblue;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px; 
-}
-.break-time h5:hover{
-    background-color: bisque;
-}
 
 .exercise-container{
     margin-top: 50px;   
