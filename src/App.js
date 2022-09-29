@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Activity from './components/Activity/Activity';
+import icon from './image/icon1-removebg-preview.png'
 import './App.css';
 import OtherInfo from './components/OtherInfo/OtherInfo';
 import 'react-toastify/dist/ReactToastify.css';
@@ -25,7 +26,7 @@ function App() {
     <div >
       <div className='homepage'>
         <div className="activities-container">
-          <h1>Be-<span className='pink'>piNk</span>  b-STRONG</h1>
+          <h1 className='headline'><span><img src={icon} alt="" /></span> Be-<span className='pink'>piNk</span>  b-STRONG </h1>
           <h3>Select today’s exercise</h3>
           <div className="activity-container">
             {
@@ -41,7 +42,7 @@ function App() {
           <OtherInfo exerciseDetails={exerciseDetails}></OtherInfo>
         </div>
       </div>
-      
+
       <div className="blog-container">
         <Blog></Blog>
       </div>

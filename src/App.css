@@ -8,6 +8,9 @@
   padding: 50px;
 }
 
+.headline img{
+  width: 5%;
+}
 .activity-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
