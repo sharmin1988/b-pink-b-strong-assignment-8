@@ -1,5 +1,6 @@
 const addToDb = (time) => {
-localStorage.setItem('Break-time', time)
+    const breakTime = {time}
+localStorage.setItem('Break-time', JSON.stringify (breakTime))
 }
 
 export {
