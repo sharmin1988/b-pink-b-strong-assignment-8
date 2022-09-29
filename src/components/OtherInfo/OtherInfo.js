@@ -14,7 +14,6 @@ const OtherInfo = ({ exerciseDetails }) => {
     }
 
     const handelBreak = (event) => {
-        console.log(event)
         addToDb(event)
         setBrTime(event)
     }
